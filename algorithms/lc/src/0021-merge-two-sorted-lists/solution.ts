@@ -1,9 +1,6 @@
-import ListNode from "../utils/list-node";
+import ListNode from '../utils/list-node';
 
-export function mergeTwoLists(
-  list1: ListNode | null,
-  list2: ListNode | null
-): ListNode | null {
+export function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {
   const head = new ListNode();
   let curr = head;
 
