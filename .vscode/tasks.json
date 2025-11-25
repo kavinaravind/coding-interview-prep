@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "New Problem",
+      "type": "shell",
+      "command": "python3 algorithms/lc/scripts/generate.py ${input:probNum} \"${input:probName}\"",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Update Readme",
+      "type": "shell",
+      "command": "python3 algorithms/lc/scripts/update_readme.py",
+      "presentation": {
+        "reveal": "silent"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "probNum",
+      "description": "Problem Number (e.g., 1)",
+      "default": "",
+      "type": "promptString"
+    },
+    {
+      "id": "probName",
+      "description": "Problem Name (e.g., Two Sum)",
+      "default": "",
+      "type": "promptString"
+    }
+  ]
+}

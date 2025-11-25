@@ -3,7 +3,7 @@ name = "coding-interview-prep"
 version = "0.1.0"
 description = "A project for coding interview preparation."
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.12"
 
 [project.optional-dependencies]
 test = [
