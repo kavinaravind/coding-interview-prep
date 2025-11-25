@@ -1,0 +1,19 @@
+[project]
+name = "coding-interview-prep"
+version = "0.1.0"
+description = "A project for coding interview preparation."
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "src"
+]
+python_files = "*solution.py"
+python_classes = "Test*"
+addopts = "--import-mode=importlib"
